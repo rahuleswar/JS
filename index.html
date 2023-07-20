@@ -3,156 +3,71 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>JS</title>
+	<title>JS workout Sums</title>
 </head>
 <body>
      
 
+      <script type="text/javascript">
 
-     <script type="text/javascript">
+      	var a=40;
+      	var b=20;
+      	var c=36;
+      	
+      console.log("(a+c-c)||(a*b<c-a)||(a>b)");
+      console.log("(",a,"+",c,"-",c,")||(",a,"*",b,"<",c,"-",a,")||(",a,">",b,")");
+      console.log("(",a+c,"-",c,")||(",a*b,"<",c-a,")||(",a>b,")");
+      console.log("(",a+c-c,")||(",a*b<c-a,")||(",a>b,")");
+      console.log((a+c-c)||(a*b<c-a)||(a>b));
+      console.log("")
 
-console.log("//------JS Veriables------//");
-      //var
-      //let
-      //const
-    
-   console.log(" "); 
-     	var a = 10;
-     	let b = 20;
-     	const c = 30;     	
-     	console.log("var, let, const, outside declared & outside called : ", a, b, c );
 
-     	 
+      console.log("(a==c)&&(a!==b)&&(c!=b)");
+      console.log("(",a,"==",c,")&&(",a,"!==",b,")&&(",c,"!=",b,")");
+      console.log("(",a==c && a!==b,")","&&(",c!=b,")");
+      console.log((a==c)&&(a!==b)&&(c!=b));
+      console.log("")
 
-     	{
-     		var d = 40;
-     	    let e = 50;
-     	    const f = 60;
-        console.log("var, let, const, outside declared & inside called : ", a, b, c );  
-        console.log("var, let, const, inside declared & inside called : ", d, e, f );    
-     	}
-        console.log("var inside declared & outside called : ", d );
-      console.log(" ");
-  
-console.log("//------JS Data Types------//");
-   
-   console.log(" ");
 
-       //String
-        
-        var char = "Asthetic World";
-        console.log("Given Data :",char);
-        console.log("Data Type :",typeof(char));
-      console.log(" ");
+      console.log("(a>=c-b)||(b<=c+a)&&(c==b*c)");
+      console.log("(",a,">=",c,"-",b,")||(",b,"<=",c+a,")&&(",c,"==",b,"*",c,")");
+      console.log("(",a,">=",c-b,")||(",b,"<=",c+a,")&&(",c,"==",b*c,")");
+      console.log("(",a>=c-b,")||(",b<=c+a,")&&(",c==b*c,")");
+      console.log("(",a>=c-b || b<=c+a,")&&(",c==b*c,")");
+      console.log((a>=c-b)||(b<=c+a)&&(c==b*c));
+      console.log("")
 
-      //number 
 
-        let num = 24;
-        console.log("Given Data :",num);
-        console.log("Data Type :",typeof(num));
-      console.log(" ");  
-
-      //undefined
-
-        let data;
-        console.log("Given Data :",data)
-        console.log("Data Type :",typeof(data));
-      console.log(" ");  
-
-      //boolean
-
-        const ans_1 = a==b;
-        const ans_2 = a<=b;
-        console.log("Given Data :",ans_1,ans_2);
-        console.log("Data Type :",typeof(ans_1,ans_2));
-      console.log(" ");  
-        
-      //object
-
-        var student = {
-         name: "rahul", 
-         age:12, 
-         score:6.5
-      };
-        console.log(student);
-        console.log("Object Name :",student.name);
-        console.log("Object Age :",student.age);
-        console.log("Object Score :",student.score);
-      console.log(" ");  
-
-      //Array
-
-        let front = ["HTML", "CSS", "JAVASCRIPT"];
-        console.log("Array 0:",front[0]);
-        console.log("Array 1:",front[1]);
-        console.log("Array 2:",front[2]);
-        console.log("Data Type :",typeof(front));
-
-      console.log(" ");  
       
-      //Bigint
-
-        const value = BigInt("296583093");
-        console.log(value);
-        console.log("Data Type :",typeof(value));
-      
-      console.log(" "); 
-        
-
-console.log("//------JS Operoators------//"); 
-
-    console.log(" ");
-   console.log("a =",a);
-   console.log("b =",b); 
-
-   console.log("******Arithmetic Operoators******"); 
-    console.log(" "); 
-   console.log("a+b = ",a+b); 
-   console.log("a-b = ",a-b);
-   console.log("a*b = ",a*b);
-   console.log("a/b = ",a/b);
-   console.log("a%b = ",a%b);
-   console.log("a++ = ",a++);
-   console.log("++a = ",++a);
-   console.log("a-- = ",a--);
-   console.log("--a = ",--a);
-    console.log(" "); 
-
-   console.log("******Assingment Operoators******");
-    console.log(" ");
-   console.log("a =",a,"b = ",b); 
-    a=b;
-    b=a;
-    console.log(" ");
-   console.log("a =",a,"b = ",b);
-   add = a+b;
-   sub = a-b;
-   mult = a*b;
-   div = a/b;
-   remainder = a%b;
-   exponentiation = a**2;
-
-   console.log("",add);
-   console.log("",sub);
-   console.log("",mult);
-   console.log("",div);
-   console.log("",remainder);
-   console.log("",exponentiation);
-
-   console.log("******Comparison Operoators******");
-   console.log("d =",d);
-   console.log("c =",c);
-    console.log(" ");
-   console.log("d==c :",d==c);
-   console.log("d===c :",d===c);
-   console.log("d!=c :",d!=c);
-   console.log("d!==c :",d!==c);
-   console.log("d<c :",d>c);
-   console.log("d>c :",d<c);
-   console.log("d<=c :",d<=c);
-   console.log("d>=c :",d>=c); 
+      console.log("(a/c<=a)&&(b%c>=a)||(c-a==b)");
+      console.log("(",a,"/",c,"<=",a,")&&(",b,"%",c,">=",a,")||(",c,"-",a,"==",b,")");
+      console.log("(",a/c,"<=",a,")&&(",b%c,">=",a,")||(",c-a,"==",b,")");
+      console.log("(",a/c<=a,")&&(",b%c>=a,")||(",c-a==b,")");
+      console.log((a/c<=a)&&(b%c>=a)||(c-a==b));
+      console.log("")
 
 
-     </script>
+      console.log("(a*b-c)&&(c*b)");
+      console.log("(",a,"*",b-c,")&&(",c*b,")");
+      console.log("(",a*b-c,")&&(",c*b,")");
+      console.log((a*b-c)&&(c*b));
+      console.log("")
+
+
+      console.log("(a*b-c)||(c*b)");
+      console.log("(",a,"*",b-c,")||(",c*b,")");
+      console.log("(",a*b-c,")||(",c*b,")");
+      console.log((a*b-c)||(c*b));
+      console.log("")
+
+
+     
+
+
+
+
+
+
+      </script>
 </body>
 </html>
